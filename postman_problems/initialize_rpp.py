@@ -8,7 +8,20 @@ import initialize_lib as il
 def InnerAndOuterToEdgeListFile(directory = 'C:\\Users\jconnor\OneDrive - Bay Area Air Quality Management District\Documents\Projects\Maps\Route Testing\\',
         InnerFileName = 'Haight Inner Polygon.csv',
         OuterFileName = 'Haight Outer Polygon.csv', turn_weight_coefficient=1):
-
+    """
+    Obtains street network data and generates edgelist, graphs, and other parameters to be used in rpp solver and visualization
+    Args:
+        directory (str): directory to find polygon files
+        InnerFileName (str): inner polygon filename
+        OuterFileName (str): outer polygon filename
+    Returns:
+        START_NODE (int): node at which to start the rpp circuit. Here is is set to the western most node
+        req_comp_g (NetworkX DiGraph): graph of required streets
+        complete_g (NetworkX DiGraph): graph of all streets within outer polygon
+        elfn (csv object): csv dataframe containing rpp edgelist
+        GranularConnector_EdgeList (list): list of all granular connector edges
+        
+    """
     inner_g, outer_g = il.create_inner_and_outer_graph(directory, InnerFileName, OuterFileName)
 
     inner_g = il.create_turn_weight_edge_attr(inner_g, normalization_coefficient=turn_weight_coefficient)
@@ -36,4 +49,4 @@ def InnerAndOuterToEdgeListFile(directory = 'C:\\Users\jconnor\OneDrive - Bay Ar
 
     complete_g = outer_g.copy()
 
-    return START_NODE, req_comp_g, complete_g, elfn, dfrpp, GranularConnector_EdgeList
+    return START_NODE, req_comp_g, complete_g, elfn, GranularConnector_EdgeList
