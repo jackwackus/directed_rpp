@@ -1,3 +1,8 @@
+"""
+Copy of library by brooksandrew
+Some functions modified by jackwackus. These are keyed by #JC
+"""
+
 import itertools
 import networkx as nx
 import postman_problems.shortest_path_mod as spm
