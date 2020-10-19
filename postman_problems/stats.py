@@ -1,5 +1,6 @@
-import collections
+# modified version of function by brooksandrew
 
+import collections
 
 def calculate_postman_solution_stats(circuit, edge_weight_name='distance'):
     #JC modified for directed graphs
