@@ -1,4 +1,5 @@
 """
+Copy of library by brooksandrew
 Read directional graph from Open Street Maps osm format
 Based on ToFull's OSM parser here https://gist.github.com/Tofull/49fbb9f3661e376d2fe08c2e9d64320e
 Based on the osm to networkx tool from aflaxman : https://gist.github.com/aflaxman/287370/
