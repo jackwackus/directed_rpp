@@ -12,7 +12,7 @@ Args:
         The inner polygon file contains a set of coordinates that specify a polygon containing all required roads
         The outer polygon file contains a set of coordinates that specify a polygon containing optional roads
         in addition to the inner polygon
-        Example inner and outer polygon files are saved in the main directory
+        Example inner and outer polygon files are saved in the directed_rpp directory
 Returns:
     Status print statements and visualization plots.
     Routes in .csv and .gpx input.
