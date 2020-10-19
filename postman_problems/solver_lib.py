@@ -1,5 +1,5 @@
 #	File Created:
-#	Author: Jack Connor <jconnor@baaqmd.gov>
+#	Modifications and additions to code by brooksandrew
 
 import itertools
 import networkx as nx
