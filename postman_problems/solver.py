@@ -1,5 +1,9 @@
 #	File Created: 10/15/2020
 
+"""
+modified version of solver by brooksandrew
+"""
+
 import postman_problems.solver_lib as sl
 from initialize_lib import turn_weight_function_distance, create_turn_weight_edge_attr
 from postman_problems.graph import read_edgelist, create_networkx_graph_from_edgelist, create_required_graph, assert_graph_is_strongly_connected, create_eulerian_circuit
