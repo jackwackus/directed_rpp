@@ -36,7 +36,7 @@ InnerFileName = file_identifier + ' Inner Polygon.csv'
 OuterFileName = file_identifier + ' Outer Polygon.csv'
 
 
-START_NODE, req_comp_g, complete_g, elfn, dfrpp, GranularConnector_EdgeList = InnerAndOuterToEdgeListFile(directory=input_file_directory, InnerFileName=InnerFileName, OuterFileName=OuterFileName, turn_weight_coefficient=turn_weight_coefficient)
+START_NODE, req_comp_g, complete_g, elfn, GranularConnector_EdgeList = InnerAndOuterToEdgeListFile(directory=input_file_directory, InnerFileName=InnerFileName, OuterFileName=OuterFileName, turn_weight_coefficient=turn_weight_coefficient)
 
 circuit_rpp = rpp(elfn, complete_g, start_node = START_NODE, turn_weight_coefficient=turn_weight_coefficient)
 circuit_rpp = ml.circuit_path_string_to_int(circuit_rpp)
