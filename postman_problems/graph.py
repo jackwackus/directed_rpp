@@ -1,6 +1,12 @@
-import warnings
+"""
+copy of library by brooksandrew
+some modifications made by jackwackus and keyed with #JC
+"""
+
+warnings
 import networkx as nx
 import pandas as pd
+#JC import modified NetworkX Dijkstra path functions to handle turn weighting
 import postman_problems.shortest_path_mod as spm
 
 
