@@ -3,7 +3,7 @@ copy of library by brooksandrew
 some modifications made by jackwackus and keyed with #JC
 """
 
-warnings
+import warnings
 import networkx as nx
 import pandas as pd
 #JC import modified NetworkX Dijkstra path functions to handle turn weighting
